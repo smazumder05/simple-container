@@ -26,10 +26,10 @@ The following flags are allowed:
 - CLONE_NEWNS – mount points (file systems)
 - CLONE_NEWUSER – users and groups
 
-*** Running shell
+### Running shell
 To easier play around the new environment, let’s run a shell in the child process. Actually, let’s run arbitrary commands, much like docker run:
 
-*** Network interfaces
+### Network interfaces
 
 What our container launcher should do is to create a pair of peer interfaces, veth0 and veth1, link them to the br0 and set up routing within the container.
 
