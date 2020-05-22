@@ -1,10 +1,12 @@
 # simple-container
 
-My implemetaion of a container(chroot on steriods) using Linux kernel APIs, cgroups and runc
+> My goal is to run a common busybox Docker image, but without docker. Docker uses btrfs as a filesystem format for its images. Let’s try pulling the image and unpack it into a directory:
+
+
+My implemetation of a container(chroot on steriods) using Linux kernel APIs, cgroups and runc
 
 Containers a self-contained bundle of code and its dependencies, that can be shipped together and run in an isolated environment inside some host operating system.
 
-My goal is to run a common busybox Docker image, but without docker. Docker uses btrfs as a filesystem format for its images. Let’s try pulling the image and unpack it into a directory:
 
 ```
 mkdir rootfs
